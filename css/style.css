@@ -570,7 +570,7 @@ html.with-fancybox body.hide-scrollbar {
   padding-bottom: 10px;
 }
 .header-fixed-bg.header-light .header {
-  background: var(--clr-base);
+  background: rgba(0, 0, 0, 0.7);
 }
 .header-top .header {
   position: absolute;
