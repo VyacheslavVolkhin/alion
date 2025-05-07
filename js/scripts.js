@@ -6,6 +6,17 @@ document.addEventListener("DOMContentLoaded", function() {
 	});
 
 
+	//button scroll 
+	document.querySelectorAll('.js-anchor').forEach(anchor => {
+		anchor.addEventListener('click', function (e) {
+			e.preventDefault();
+			document.querySelector(this.getAttribute('href')).scrollIntoView({
+				behavior: 'smooth'
+			});
+		});
+	});
+
+
 	//fixed header
 	let header = document.querySelector(".header");
 	let headerHeight = header.offsetHeight;
