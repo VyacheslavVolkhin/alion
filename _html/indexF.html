@@ -13,6 +13,29 @@
             <div class="page-full">
 
 				<div class="menu-box">
+					<ul class="menu menu-mobile">
+						<li class="js-popup-wrap">
+							<a href="" class="btn-menu js-btn-popup-toggle">
+								<div class="button-ico">
+									<img src="./img/icons/catalog.svg" alt="">
+								</div>
+								<div class="button-title">Каталог</div>
+							</a>
+							<div class="menu-content-block js-popup-block">
+								<ul class="list">
+									<li><a href="#section01" class="js-anchor">Натуральное эфирное масло пихты сибирской</a></li>
+									<li><a href="#section02" class="js-anchor">Эфирные и косметические масла</a></li>
+									<li><a href="#section03" class="js-anchor">Масляные экстракты</a></li>
+									<li><a href="#section04" class="js-anchor">Ингредиенты для производства косметики</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="" class="btn-menu">
+								<div class="button-title">Получить прайс</div>
+							</a>
+						</li>
+					</ul>
 					<ul class="menu">
 						<li>
 							<a href="#section01" class="btn-menu js-anchor">
@@ -34,6 +57,7 @@
 								<div class="button-title">Ингредиенты</div>
 							</a>
 						</li>
+						
 					</ul>
 				</div>
 				
@@ -45,7 +69,7 @@
 						</div>
 					</div>
 					<div class="info-inner-wrap">
-						<div class="elm-photo">
+						<div class="elm-photo photo-cover">
 							<img src="./img/lead.jpg" alt="">
 						</div>
 						<h1 class="lead-title h2-title">100% НАТУРАЛЬНОЕ ЭФИРНОЕ МАСЛО ПИХТЫ СИБИРСКОЙ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
@@ -55,7 +79,7 @@
 				<!--/lead-box-->
 
 				<!--bg-box-->
-				<div class="bg-box">
+				<div class="bg-box section-first">
 					<div class="bg-full-wrap bg-att pt40"></div>
 
 					<!--tiles-box-->
@@ -108,7 +132,12 @@
 					<!--info-tiles-box-->
 					<div class="info-tiles-box">
 						<div class="bg-inner-wrap bg-base-title">
-							<img src="./img/01.jpg" alt="" class="img-bg-cover">
+							<picture class="elm-photo photo-cover">
+								<source srcset="./img/01.jpg" media="(min-width: 1200px)">
+								<source srcset="./img/01-m.jpg" media="(min-width: 768px)">
+								<source srcset="./img/01-s.jpg" media="">
+								<img src="./img/01.jpg" alt="" />
+							</picture>
 						</div>
 						<div class="info-inner-wrap">
 							<h2 class="info-title h1-title">Производим, перерабатываем, Продаем крупным оптом</h2>
@@ -185,7 +214,7 @@
 				<!--/bg-box-->
 
 				<!--bg-box-->
-				<div class="bg-box">
+				<div class="bg-box section-second">
 					<div class="bg-full-wrap bg-att-second bg-radius">
 						<div class="elm-photo">
 							<img src="./img/bg-content.png" alt="">
@@ -303,7 +332,7 @@
 				<!--/bg-box-->
 
 				<!--bg-box-->
-				<div class="bg-box">
+				<div class="bg-box section-third">
 					<div class="bg-full-wrap bg-radius"></div>
 					
 					<!--title-box-->
@@ -324,7 +353,9 @@
 									<div class="tile-ico ico-main">
 										<img src="./img/icons/03.svg" alt="">
 									</div>
-									<div class="tile-title">Приятные <br> цены</div>
+									<div class="tile-title">
+										<div class="tile-title-inner">Приятные <br> цены</div>
+									</div>
 								</div>
 							</div>
 							<!--/item wrap-->
@@ -334,7 +365,9 @@
 									<div class="tile-ico ico-main">
 										<img src="./img/icons/04.svg" alt="">
 									</div>
-									<div class="tile-title">Удобная <br>логистика</div>
+									<div class="tile-title">
+										<div class="tile-title-inner">Удобная <br>логистика</div>
+									</div>
 								</div>
 							</div>
 							<!--/item wrap-->
@@ -344,7 +377,9 @@
 									<div class="tile-ico ico-main">
 										<img src="./img/icons/01.svg" alt="">
 									</div>
-									<div class="tile-title">Ведущий <br>поставщик </div>
+									<div class="tile-title">
+										<div class="tile-title-inner">Ведущий <br>поставщик </div>
+									</div>
 								</div>
 							</div>
 							<!--/item wrap-->
@@ -354,7 +389,9 @@
 									<div class="tile-ico ico-main">
 										<img src="./img/icons/02.svg" alt="">
 									</div>
-									<div class="tile-title">Всегда большой <br><a href="" class="link-main">ассортимент</a> </div>
+									<div class="tile-title">
+										<div class="tile-title-inner">Всегда большой <br><a href="" class="link-main">ассортимент</a> </div>
+									</div>
 								</div>
 							</div>
 							<!--/item wrap-->
@@ -408,7 +445,7 @@
 				<!--/bg-box-->
 
 				<!--bg-box-->
-				<div class="bg-box">
+				<div class="bg-box section-four">
 					<div class="bg-full-wrap bg-att bg-radius">
 						<div class="elm-photo">
 							<img src="./img/bg-content.png" alt="">
@@ -472,7 +509,7 @@
 
 					<!--icons-tiles-box-->
 					<div class="icons-tiles-box">
-						<div class="items-wrap">
+						<div class="items-wrap col-3">
 							<!--item wrap-->
 							<div class="item-wrap">
 								<div class="item-tile-info-ico">
@@ -552,7 +589,7 @@
 				<!--/bg-box-->
 
 				<!--bg-box-->
-				<div class="bg-box">
+				<div class="bg-box section-five">
 					<div class="bg-full-wrap bg-radius"></div>
 					
 					<!--title-box-->
@@ -569,7 +606,7 @@
 						<div class="items-wrap">
 							<!--item wrap-->
 							<div class="item-wrap">
-								<div class="item-tile-info-main tile-second bg-att">
+								<div class="item-tile-info-main tile-third bg-att">
 									<div class="tile-photo-wrap">
 										<div class="tile-photo photo-cover">
 											<img src="./img/photo07.jpg" alt="">
@@ -603,7 +640,7 @@
 
 					<!--icons-tiles-box-->
 					<div class="icons-tiles-box">
-						<div class="items-wrap">
+						<div class="items-wrap col-3">
 							<!--item wrap-->
 							<div class="item-wrap">
 								<div class="item-tile-info-ico">
@@ -684,6 +721,11 @@
 
 				<!--form-box-->
 				<div class="form-box">
+					<div class="bg-inner-wrap bg-base-title">
+						<div class="elm-photo">
+							<img src="./img/lead-bg.jpg" alt="">
+						</div>
+					</div>
 					<div class="info-inner-wrap">
 						<div class="title-wrap">
 							<h2 class="h3-title">Получите консультацию</h2>

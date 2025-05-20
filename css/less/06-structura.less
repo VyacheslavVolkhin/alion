@@ -159,6 +159,7 @@ html.with-fancybox body.hide-scrollbar {
 	font-size: 18px;
 	line-height: 1.5;
 	transition: all ease 0.2s;
+	border-bottom: 1px solid rgba(232, 224, 181, 0.20);
 	.inner-wrap {
 		display: flex;
 		align-items: center;
@@ -282,8 +283,25 @@ html.with-fancybox body.hide-scrollbar {
 			font-size: 2.4rem;
 		}
 	}
+	.footer {
+		padding-top: 40px;
+		font-size: 18px;
+		.info-inner-wrap {
+			margin: 0;
+		}
+		.info-wrap {
+			flex-shrink: 0;
+			width: auto;
+			padding: 0;
+			&:nth-child(2) {
+				flex: 1;
+				padding: 0 50px;
+				text-align: left;
+			}
+		}
+	}
 }
-@media (max-width: 1023px) {
+/* @media (max-width: 1023px) {
     .section-mobile-full {
         margin-left: calc(var(--paddingContainer) * -1);
         margin-right: calc(var(--paddingContainer) * -1);
@@ -365,6 +383,117 @@ html.with-fancybox body.hide-scrollbar {
 	.header {
 		.action-wrap {
 			display: none;
+		}
+	}
+} */
+
+@media (max-width: 1199px) {
+	.header {
+		padding: 28px 0;
+		.logo {
+			width: 70px;
+		}
+		.logo-title {
+			font-size: 15px;
+		}
+		.action-wrap {
+			padding-left: 10px;
+			.btn {
+				height: 45px;
+				padding: 0 24px;
+				font-size: 14px;
+			}
+		}
+		.lang-wrap {
+			.btn {
+				height: 40px;
+				font-size: 14px;
+			}
+		}
+		.phone-wrap {
+			.btn {
+				padding-right: 0;
+				font-size: 22px;
+				height: 30px;
+			}
+		}
+		.frm-field-select .btn-popup {
+			min-width: 74px;
+		}
+	}
+}
+@media (max-width: 1023px) {
+	.header {
+		.logo-title {
+			font-size: 10px;
+			padding-left: 10px;
+			padding-right: 9px;
+		}
+		.phone-wrap {
+			.btn {
+				font-size: 18px;
+			}
+		}
+	}
+}
+@media (max-width: 767px) {
+	.header {
+		.action-wrap {
+			display: none;
+		}
+		.lang-wrap {
+			padding-left: 9px;
+			.btn {
+				height: 30px;
+
+			}
+		}
+		.phone-wrap {
+			.btn {
+				width: 30px;height: 30px;
+				border-radius: 50%;
+				padding: 0;
+				min-width: 0;
+				border: 1px solid var(--clr-bg-att-second);
+				background: none;
+				.button-title {
+					display: none;
+				}
+				&:before {
+					content: "";
+					display: block;
+					width: 24px;
+					height: 24px;
+					position: absolute;
+					background: url(../img/icons/phone.svg) center no-repeat;
+					background-size: 100% auto;
+					top: 50%;left: 50%;
+					margin: -12px 0 0 -12px;
+				}
+			}
+		}
+		.frm-field-select .btn-popup {
+			min-width: 62px;
+		}
+	}
+	.footer {
+		padding-top: 80px;
+		.info-inner-wrap {
+			display: block;
+		}
+		.info-wrap {
+			width: 100%;
+			padding: 0;
+			margin-bottom: 30px;
+			text-align: left;
+			&:nth-child(2) {
+				width: 100%;
+				padding: 0;
+				margin-bottom: 30px;
+			}
+			&:last-child {
+				text-align: left;
+			}
 		}
 	}
 }

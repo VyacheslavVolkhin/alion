@@ -17,8 +17,8 @@
 	--rdSmall: 5px;
 	--rd1: 1rem;
 	--rd2: 2rem;
-	--rd3: 3rem;
-	--rd4: 4rem;
+	--rd3: 30px;
+	--rd4: 40px;
 	--icoSize: 24px;
 
 	--min: 360px;
@@ -309,29 +309,33 @@ h6, .h6-title {
 		
 		font-size: 8px;
     }
+	.h1-title, h1 {
+		font-size: 48px;
+	}
+	.h4-title, h4 {
+		font-size: 24px;
+	}
 }
 @media (max-width: 1023px) {
     :root {
 		--fsize: 16px;
 
 		font-size: 7px;
+
+		--rd4: 20px;
     }
-	.h1-title, h1 {
-		font-size: 5rem;
-	}
+	
 	.h2-title, h2 {
 		font-size: 4rem;
 	}
 	.h3-title, h3 {
 		font-size: 3rem;
 	}
-	.h4-title, h4 {
-		font-size: 16px;
-	}
+	
 }
 @media (max-width: 639px) {
 	.h1-title, h1 {
-		font-size: 26px;
+		font-size: 28px;
 	}
 	.h2-title, h2 {
 		font-size: 24px;
@@ -343,9 +347,14 @@ h6, .h6-title {
 		font-size: 16px;
 	}
 }
+@media (min-width: 375px) {
+	:root {
+        --paddingContainer: 20px;
+    }
+}
 @media (min-width: 1024px) {
     :root {
-        --paddingContainer: 30px;
+        --paddingContainer: 40px;
     }
 }
 @media (min-width: 1400px) {
